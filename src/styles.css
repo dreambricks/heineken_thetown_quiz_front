@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: 'heineken'; /* Nome da fonte */
+    src: url('assets/fonts/HEINEKEN.TTF') format('TTF'); /* Caminho para o arquivo de fonte */
+    /* Adicione mais formatos (woff, ttf, etc.) para garantir a compatibilidade com diferentes navegadores */
+  }

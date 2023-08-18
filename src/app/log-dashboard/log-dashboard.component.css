@@ -1,0 +1,48 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .example-header {
+    min-height: 64px;
+    padding: 0px 24px 0; 
+  }
+
+  .filterInput{
+    width: 40%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .mat-table {
+    overflow: auto;
+    max-height: 500px;
+  }
+
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .container{
+    padding-top: 50px;
+  }
+
+
+  .heinekenFont {
+    font-family: 'heineken'; /* Use o nome da fonte definido no @font-face */
+  }
+
+
+
+
+
+  
