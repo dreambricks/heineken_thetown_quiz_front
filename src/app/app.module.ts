@@ -13,22 +13,21 @@ import { MatPaginatorModule }  from '@angular/material/paginator'
 import { MatSortModule }  from '@angular/material/sort'
 import { MatTableModule }  from '@angular/material/table'
 import { MatFormFieldModule }  from '@angular/material/form-field'
-import { MatInputModule }  from '@angular/material/input'
-
-
-
-
-
+import { MatInputModule }  from '@angular/material/input';
+import { CardDashboardComponent } from './card-dashboard/card-dashboard.component'
+import {MatCardModule} from '@angular/material/card';
 
 const routes: Routes = [
-  { path: 'log-dashboard', component: LogDashboardComponent }
+  { path: 'log-dashboard', component: LogDashboardComponent },
+  { path: 'card-dashboard', component: CardDashboardComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     LogDashboardComponent,
-    DateFormatPipe
+    DateFormatPipe,
+    CardDashboardComponent
   ],
   imports: [
     HttpClientModule,
@@ -40,7 +39,8 @@ const routes: Routes = [
     MatSortModule,
     MatTableModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
   ],
   providers: [BackendService],
   bootstrap: [AppComponent, LogDashboardComponent]

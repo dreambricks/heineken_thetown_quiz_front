@@ -14,4 +14,19 @@ export class BackendService {
     const url = `${this.baseUrl}/datalogs?page=${page}&size=${pageSize}`;
     return this.http.get(url);
   }
+
+  // getStatusCount(): Observable<any>{
+  //   const url = `${this.baseUrl}/datalogs/status/count`;
+  //   return this.http.get(url);
+  // }
+
+  getStatusCountByBarName(barName: string): Observable<{ status: string, count: number }[]>{
+    const url = `${this.baseUrl}/datalogs/status/count?barName=${barName}`;
+    return this.http.get<{ status: string, count: number }[]>(url);
+  }
+
+  // getStatusCountByBarNameAndData(barName: string, startDate:string, endDate:string): Observable<any>{
+  //   const url = `${this.baseUrl}/datalogs/status/count?barName=${barName}&startDate=${startDate}&endDate=${endDate}`;
+  //   return this.http.get(url);
+  // }
 }
