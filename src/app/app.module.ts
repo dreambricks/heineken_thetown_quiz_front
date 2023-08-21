@@ -16,6 +16,7 @@ import { MatFormFieldModule }  from '@angular/material/form-field'
 import { MatInputModule }  from '@angular/material/input';
 import { CardDashboardComponent } from './card-dashboard/card-dashboard.component'
 import {MatCardModule} from '@angular/material/card';
+import { UnderscoreToSpacePipe } from './underscore-to-space.pipe';
 
 const routes: Routes = [
   { path: 'log-dashboard', component: LogDashboardComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
     AppComponent,
     LogDashboardComponent,
     DateFormatPipe,
-    CardDashboardComponent
+    CardDashboardComponent,
+    UnderscoreToSpacePipe
   ],
   imports: [
     HttpClientModule,

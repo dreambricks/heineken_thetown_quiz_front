@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BackendService {
-  private baseUrl = 'http://18.228.206.21:8080/api'; // Altere para a URL do seu backend
+  private baseUrl = 'http://54.94.73.62:8080/api'; // Altere para a URL do seu backend
 
   constructor(private http: HttpClient) { }
 
