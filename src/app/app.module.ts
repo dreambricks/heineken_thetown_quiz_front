@@ -20,7 +20,7 @@ import { UnderscoreToSpacePipe } from './underscore-to-space.pipe';
 
 const routes: Routes = [
   { path: 'log-dashboard', component: LogDashboardComponent },
-  { path: 'card-dashboard', component: CardDashboardComponent }
+  { path: '', component: CardDashboardComponent }
 ];
 
 @NgModule({

@@ -6,7 +6,7 @@ import { CardDashboardComponent } from './card-dashboard/card-dashboard.componen
 
 const routes: Routes = [
   { path: 'log-dashboard', component: LogDashboardComponent },
-  { path: 'card-dashboard', component: CardDashboardComponent }
+  { path: '', component: CardDashboardComponent }
 ];
 
 @NgModule({

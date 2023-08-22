@@ -1,10 +1,16 @@
 <div class="father">
     <div class="container">
+        <a href="http://hnk150.ddns.net:8080/api/datalogs/downloaddata">
+            <i class="fa-solid fa-file-arrow-down icon"></i>
+        </a>
         <mat-card>
-            <mat-card-header>{{ Tablet_1 | underscoreToSpace  }}</mat-card-header>
+            <mat-card-header>{{ Tablet_1 | underscoreToSpace }}</mat-card-header>
             <mat-card-content class="content" *ngFor="let item of data1">
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content class="lastUpdate">
+                <p>Ultima atualização: {{lastUpdate1 | dateFormat }}</p>
             </mat-card-content>
         </mat-card>
 
@@ -14,6 +20,9 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate2 | dateFormat }}</p>
+            </mat-card-content>
         </mat-card>
 
         <mat-card>
@@ -21,6 +30,9 @@
             <mat-card-content class="content" *ngFor="let item of data3">
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate3 | dateFormat }}</p>
             </mat-card-content>
         </mat-card>
 
@@ -30,6 +42,9 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate4 | dateFormat }}</p>
+            </mat-card-content>
         </mat-card>
 
         <mat-card>
@@ -38,6 +53,9 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate5 | dateFormat }}</p>
+            </mat-card-content>
         </mat-card>
 
         <mat-card>
@@ -45,6 +63,9 @@
             <mat-card-content class="content" *ngFor="let item of data6">
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate6 | dateFormat }}</p>
             </mat-card-content>
         </mat-card>
 
@@ -55,6 +76,9 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate7 | dateFormat }}</p>
+            </mat-card-content>
         </mat-card>
 
         <mat-card>
@@ -62,6 +86,9 @@
             <mat-card-content class="content" *ngFor="let item of data8">
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate8 | dateFormat }}</p>
             </mat-card-content>
         </mat-card>
 
@@ -71,13 +98,30 @@
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
             </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate9 | dateFormat }}</p>
+            </mat-card-content>
         </mat-card>
-        
+
         <mat-card>
             <mat-card-header>{{ Tablet_10 | underscoreToSpace }}</mat-card-header>
             <mat-card-content class="content" *ngFor="let item of data10">
                 <p>{{ item.status }}:</p>
                 <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdate10 | dateFormat }}</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            <mat-card-header>Total</mat-card-header>
+            <mat-card-content class="content" *ngFor="let item of dataTotal">
+                <p>{{ item.status }}:</p>
+                <p>{{ item.count }}</p>
+            </mat-card-content>
+            <mat-card-content>
+                <p>Ultima atualização: {{lastUpdateTotal | dateFormat }}</p>
             </mat-card-content>
         </mat-card>
 

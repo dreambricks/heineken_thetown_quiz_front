@@ -25,6 +25,21 @@ export class BackendService {
     return this.http.get<{ status: string, count: number }[]>(url);
   }
 
+  getStatusCountTotal(): Observable<{ status: string, count: number }[]>{
+    const url = `${this.baseUrl}/datalogs/status/count`;
+    return this.http.get<{ status: string, count: number }[]>(url);
+  }
+
+  getLastUpdate(): Observable<any>{
+    const url = `${this.baseUrl}/datalogs/latest-uploaded-total`;
+    return this.http.get(url);
+  }
+
+  getLastUpdateByBarName(barName: string): Observable<any>{
+    const url = `${this.baseUrl}/datalogs/latest-uploaded?barName=${barName}`;
+    return this.http.get(url);
+  }
+
   // getStatusCountByBarNameAndData(barName: string, startDate:string, endDate:string): Observable<any>{
   //   const url = `${this.baseUrl}/datalogs/status/count?barName=${barName}&startDate=${startDate}&endDate=${endDate}`;
   //   return this.http.get(url);
