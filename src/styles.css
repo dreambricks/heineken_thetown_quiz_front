@@ -11,4 +11,5 @@ html, body { height: 100%; }
 
 body {
   margin: 0; font-family: 'Heineken', sans-serif !important;  /* Use o mesmo nome escolhido acima */
+  font-size: 29px !important;
 }

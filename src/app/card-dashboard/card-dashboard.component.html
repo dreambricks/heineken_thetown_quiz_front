@@ -1,8 +1,13 @@
 <div class="father">
     <div class="container">
+
         <a href="http://hnk150.ddns.net:8080/api/datalogs/downloaddata">
             <i class="fa-solid fa-file-arrow-down icon"></i>
         </a>
+        <a href="/log-dashboard">
+            <i class="fa-solid fa-arrow-right iconArrow" style="color: #ffffff;"></i>
+        </a>
+
         <mat-card>
             <mat-card-header>{{ Tablet_1 | underscoreToSpace }}</mat-card-header>
             <mat-card-content class="content" *ngFor="let item of data1">

@@ -75,5 +75,14 @@ mat-paginator{
   color: white;
 }
 
+.iconArrow {
+  position: absolute;
+  top: 93%;
+  left: 1.5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 
 
